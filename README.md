@@ -5,4 +5,4 @@
 学习完之后会陆续跟新，javaweb代码比较乱，spring还可以看 
 
 ------
-[学习的视频](https://space.bilibili.com/95256449/channel/seriesdetail?sid=393820)  学习笔记放在我的博客上，博客请看首页地址
+[学习的视频](https://space.bilibili.com/95256449/channel/seriesdetail?sid=393820)  学习笔记放在我的博客上，博客blog: http://nan-bluesky.top/
