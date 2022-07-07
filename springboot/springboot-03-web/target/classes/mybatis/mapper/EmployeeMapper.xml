@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.Mapper.EmployeeMapper">
+
+
+
+    <resultMap id="EmployeeMap" type="Employee">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="gender" column="gender"/>
+        <result property="departmentId" column="departmentId"/>
+        <result property="birth" column="birth"/>
+        <association property="department"  javaType="Department">
+            <id property="id" column="departmentId"/>
+            <result property="departmentName" column="departmentName"/>
+        </association>
+    </resultMap>
+
+    <select id="getAllEmployee" resultMap="EmployeeMap">
+        select e.id,e.name,e.email,e.gender,e.departmentId,e.birth,d.departmentName
+        from mybatis.employee e left join mybatis.department d
+        on e.departmentId = d.id
+
+    </select>
+
+    <select id="getEmployee" resultType="Employee">
+        select * from mybatis.employee where id = #{id}
+    </select>
+
+    <insert id="addEmployee" parameterType="Employee">
+        insert into mybatis.employee (id,name,email,gender,birth,departmentId)
+        values (#{id},#{name},#{email},#{gender},#{birth},#{departmentId})
+    </insert>
+
+    <update id="update" parameterType="Employee">
+        update mybatis.employee set name = #{name} ,email = #{email},gender = #{gender}
+        ,birth=#{birth},departmentId=#{departmentId}
+        where id = #{id}
+    </update>
+
+    <delete id="delete">
+        delete from mybatis.employee where id = #{id}
+    </delete>
+
+
+</mapper>

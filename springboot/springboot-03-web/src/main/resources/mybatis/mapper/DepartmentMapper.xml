@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.Mapper.DepartmentMapper">
+
+    <select id="getAllDepartment" resultType="Department">
+        select * from mybatis.department
+    </select>
+
+    <select id="getDepartment" resultType="Department">
+        select * from mybatis.department where id = #{id}
+    </select>
+
+
+
+</mapper>
