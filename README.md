@@ -2,6 +2,8 @@
 
 主要是javaweb，mybatis，spring，springmvc，springboot 还有 springcloud 
 
+注： springcloud 由于学习的时候版本是Netflix ，所以代码只写了开头一部分，也没有笔记
+
 用来给自己日后做项目的时候回忆用
 
 ------
