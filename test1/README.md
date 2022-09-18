@@ -47,7 +47,7 @@ mybatis.type-aliases-package=com.li.pojo
 
 ## 数据库的设计
 
-![image-20220918200703517](D:/Notepadpp/typora%20%20img/image-20220918200703517.png)
+![image-20220918200703517](https://github-1308115823.cos.ap-nanjing.myqcloud.com/images/202209182016677.png)
 
 ## SpringSecurity 分析
 
