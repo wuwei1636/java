@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/shiro-springboot2/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-token/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-moreRealm/pom.xml" />
       </list>
     </option>
   </component>

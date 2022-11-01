@@ -10,9 +10,8 @@
 <h1>首页</h1>
 <p th:text="${msg}"></p>
 <!--从session中获取值-->
-<div th:if="${session.loginUser == null}">
+
     <a th:href="@{/toLogin}">登录</a>
-</div>
 
 <hr>
 <div shiro:hasPermission="user:add">

@@ -7,6 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="shiro-moreRealm" />
+        <module name="shiro-token" />
         <module name="hello-shiro" />
         <module name="shiro-springboot2" />
       </profile>

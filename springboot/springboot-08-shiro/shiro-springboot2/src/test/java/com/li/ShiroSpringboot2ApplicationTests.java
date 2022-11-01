@@ -12,17 +12,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ShiroSpringboot2ApplicationTests {
 
-    @Autowired
-    private UserService userService;
 
     @Test
     void contextLoads() {
 
-        User user = userService.queryUserByName("李四");
 
-        System.out.println(userService.queryUserByName("李四"));
-
-        System.out.println(md5(user.getPwd(), user.getName()));
+        System.out.println(md5("123456", "admin"));
     }
 
 

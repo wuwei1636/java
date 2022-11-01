@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -15,11 +15,14 @@
 </div>
 
 <hr>
-<div shiro:hasPermission="user:add">
+<div shiro:hasAnyPermissions="add,admin">
     <a th:href="@{/user/add}">add</a>
 </div>
-<div shiro:hasPermission="user:update">
+<div shiro:hasAnyPermissions="update,admin">
     <a th:href="@{/user/update}">update</a>
+</div>
+<div shiro:hasPermission="admin">
+    <a th:href="@{/admin}">admin</a>
 </div>
 
 </body>
